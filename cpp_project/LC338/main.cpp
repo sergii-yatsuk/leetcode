@@ -1,18 +1,23 @@
 //https://leetcode.com/problems/counting-bits/
 #include <iostream>
-#include <cmath>
+
+#include "counting-bits.cpp"
 
 using namespace std;
 
-class Solution {
-public:
-   vector<int> countBits(int num) {
 
-   }
-};
 int main()
 {
    Solution s;
-   cout << s.reverseString("abc").c_str() << endl;
+   cout << s.cout1Bits(0) << endl;
+   cout << s.cout1Bits(1) << endl;
+   cout << s.cout1Bits(2) << endl;
+   cout << s.cout1Bits(3) << endl;
+   vector<int> vec = s.countBits(5);
+   
+   for (auto i : vec) {
+      cout << i << " ";
+   }
+   cout << endl;
    return 0;
 }

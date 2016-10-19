@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/isomorphic-strings/
 
 #include <iostream>
-#include "isomorphic-strings.cpp"
+#include "isomorphic-strings.h"
 
 using namespace std;
 

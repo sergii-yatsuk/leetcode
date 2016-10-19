@@ -18,7 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\cpp\climbing-stairs.h">
+    <ClCompile Include="..\..\cpp\maximum-xor-of-two-numbers-in-an-array.h">
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -9,7 +9,7 @@ using namespace std;
 class Solution {
 public:
    bool isSelfCrossing(vector<int>& x) {
-      return false;
+
    }
 };
 

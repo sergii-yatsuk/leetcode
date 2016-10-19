@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/climbing-stairs/
 
 #include <iostream>
-#include "climbing-stairs.h"
+#include "climbing-stairs.cpp"
 
 using namespace std;
 

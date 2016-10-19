@@ -18,8 +18,8 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\cpp\climbing-stairs.h">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="..\..\cpp\climbing-stairs.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

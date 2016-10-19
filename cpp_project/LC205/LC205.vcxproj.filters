@@ -18,8 +18,8 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\cpp\isomorphic-strings.h">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="..\..\cpp\isomorphic-strings.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

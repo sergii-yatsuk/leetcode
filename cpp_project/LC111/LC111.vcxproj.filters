@@ -18,8 +18,8 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\cpp\minimum-depth-of-binary-tree.h">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="..\..\cpp\minimum-depth-of-binary-tree.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

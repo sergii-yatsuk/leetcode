@@ -1,7 +1,7 @@
 //https://leetcode.com/problems/counting-bits/
 #include <iostream>
 
-#include "counting-bits.h"
+#include "counting-bits.cpp"
 
 using namespace std;
 

@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/rotate-function/
 #include <iostream>
-#include "rotate-function.h"
+#include "rotate-function.cpp"
 
 int main()
 {

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LC189", "LC189\LC189.vcxproj", "{D0569934-654F-4EEE-9E52-99CB5CCDEB5E}"
 EndProject
@@ -50,6 +50,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LC3", "LC3\LC3.vcxproj", "{EA4B632D-B9AF-43AC-BC8E-48C206CFC55C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LC78", "LC78\LC78.vcxproj", "{7A4A7251-6F05-48D2-B9F1-D0F776766C23}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LC349", "LC349\LC349.vcxproj", "{EA4FD072-4C19-4C53-A361-A431B575139E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +227,14 @@ Global
 		{7A4A7251-6F05-48D2-B9F1-D0F776766C23}.Release|x64.Build.0 = Release|x64
 		{7A4A7251-6F05-48D2-B9F1-D0F776766C23}.Release|x86.ActiveCfg = Release|Win32
 		{7A4A7251-6F05-48D2-B9F1-D0F776766C23}.Release|x86.Build.0 = Release|Win32
+		{EA4FD072-4C19-4C53-A361-A431B575139E}.Debug|x64.ActiveCfg = Debug|x64
+		{EA4FD072-4C19-4C53-A361-A431B575139E}.Debug|x64.Build.0 = Debug|x64
+		{EA4FD072-4C19-4C53-A361-A431B575139E}.Debug|x86.ActiveCfg = Debug|Win32
+		{EA4FD072-4C19-4C53-A361-A431B575139E}.Debug|x86.Build.0 = Debug|Win32
+		{EA4FD072-4C19-4C53-A361-A431B575139E}.Release|x64.ActiveCfg = Release|x64
+		{EA4FD072-4C19-4C53-A361-A431B575139E}.Release|x64.Build.0 = Release|x64
+		{EA4FD072-4C19-4C53-A361-A431B575139E}.Release|x86.ActiveCfg = Release|Win32
+		{EA4FD072-4C19-4C53-A361-A431B575139E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

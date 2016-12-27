@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/house-robber-iii/
 
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -12,30 +13,30 @@
 class Solution {
 public:
     int rob(TreeNode* root) {
-        if (!root) return 0;
+        unordered_map<TreeNode*, int> m;
+        return robDown(root, m);
+        
+
+    }
+    
+private:
+   int robDown(TreeNode* root, unordered_map<TreeNode*, int>& m) {
+       if (!root) return 0;
+       if (m.count(root)==1) return m[root];
+       
         if (root->left == NULL && root->right==NULL) return root->val;
         
         int result=0;
-        if (root->left && root->right  == NULL) {
-            int r1 = rob(root->left->left)+rob(root->left->right)+ root->val;
-            int r2 = rob(root->left);
-            result = max(r1, r2);
+        
+        if (root->left) {
+            result += robDown(root->left->left, m)+robDown(root->left->right, m);
         }
         
-        if (root->right && root->left == NULL) {
-            int r1 = rob(root->right->left)+rob(root->right->right)+ root->val;
-            int r2 = rob(root->right);
-            int r3 = max(r1, r2);
-            result = max(result, r3);
+        if (root->right) {
+            result += robDown(root->right->left, m)+robDown(root->right->right, m);
         }
-        
-        if (root->left && root-> right) {
-            int r1 = rob(root->left) + rob(root->right);
-            int r2 = rob(root->right->left)+rob(root->right->right)+rob(root->left->left)+rob(root->left->right)+root->val;
-            result = max(r1, r2);
-        }
-        
+        result = max(result+root->val, robDown(root->left, m) + robDown(root->right, m));
+        m[root] = result;
         return result;
-        
-    }
+   }
 };

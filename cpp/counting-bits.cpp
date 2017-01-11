@@ -1,20 +1,16 @@
+// https://leetcode.com/problems/counting-bits/
+
 class Solution {
 public:
    vector<int> countBits(int num) {
       vector<int> result(num+1);
-      for (size_t i = 0; i <= num; ++i) {
-         result[i] = cout1Bits(i);
+      int offset = 1;
+      for (size_t i = 1; i <= num; ++i) {
+          if (i == offset * 2) offset = offset *2;
+         result[i] = result[i-offset]+1;
       }
 
       return result;
    }
 
-   int cout1Bits(int n) {
-      int result = 0;
-      while (n > 0) {
-         if (n & 1) ++result;
-         n = n >> 1;
-      }
-      return result;
-   }
 };

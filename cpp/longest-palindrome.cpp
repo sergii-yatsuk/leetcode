@@ -3,16 +3,15 @@
 class Solution {
 public:
     int longestPalindrome(string s) {
-        unordered_map<char, int> m;
+        vector<int> m(256);
         for (auto& a: s) {
-            ++m[a];
+            ++m[int(a)];
         }
         int result = 0;
         bool hasOdd = false;
         for (auto& a: m) {
-            int i = a.second;
-            if (!hasOdd && i%2==1) hasOdd=true;
-            result += i/2;
+            if (!hasOdd && a%2==1) hasOdd=true;
+            result += a/2;
         }
         
         result *=2;

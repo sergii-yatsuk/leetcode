@@ -3,19 +3,17 @@
 class Solution {
 public:
     bool checkSubarraySum(vector<int>& nums, int k) {
-
-        size_t sz = nums.size();
         int sum = 0;
-        int prevMod = 0;
-        unordered_set<int> mod;
+        int prevRemainder = 0;
+        unordered_set<int> remainders;
         
-        for (size_t i=0; i<sz; ++i) {
-            sum += nums[i];
+        for (auto&& a : nums) {
+            sum += a;
             if (k!=0) sum = sum % k;
             
-            if (mod.find(sum) != mod.end()) return true;
-            mod.insert(prevMod);
-            prevMod = sum;
+            if (remainders.find(sum) != remainders.end()) return true;
+            remainders.insert(prevRemainder);
+            prevRemainder = sum;
         }
 
         return false;

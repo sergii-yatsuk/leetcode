@@ -4,19 +4,14 @@ class Solution {
 public:
     int maxProduct(vector<int>& nums) {
         int result=nums[0];
-        
-        int localMin = result;
-        int localMax = result;
-        
-        
+        vector<int> localMin(nums.size());
+        vector<int> localMax(nums.size());
+        localMin[0] = nums[0];
+        localMax[0] = nums[0];
         for (size_t i=1; i<nums.size(); ++i) {
-            if (nums[i]<0) {
-                swap(localMin, localMax);
-            }
-            
-            localMax = max(nums[i]*localMax, nums[i]);
-            localMin = min(nums[i]*localMin, nums[i]);
-            result = max(result, localMax);
+            localMax[i] = max(max(nums[i]*localMax[i-1], nums[i]*localMin[i-1]), nums[i]);
+            localMin[i] = min(min(nums[i]*localMax[i-1], nums[i]*localMin[i-1]), nums[i]);
+            result = max(result, localMax[i]);
         }
         return result;
     }
